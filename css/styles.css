@@ -6,7 +6,6 @@
 
 /* Kodun geri kalanı */
 
-
 .header {
   background-color: rgba(255, 255, 255, 1);
 }
@@ -60,7 +59,7 @@
 /*post sınıfı başlangıç*/
 .post {
   background-color: #2e2f42;
-  width: 1440px;
+  width: 496px;
   margin: 0 auto;
   display: block;
 }
@@ -74,7 +73,7 @@
   text-transform: capitalize;
   width: 496;
   height: 120px;
-  top:260 px;
+  top: 260 px;
   left: 472px;
 }
 .post-link {
