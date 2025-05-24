@@ -57,9 +57,7 @@
 /*post sınıfı başlangıç*/
 .post {
   background-color: #2e2f42;
-  width: 496px;
-  margin: 0 auto;
-  display: block;
+  width: 1440px;
 }
 .post .title {
   color: #ffffff;
@@ -69,7 +67,7 @@
   letter-spacing: 2%;
   text-align: center;
   text-transform: capitalize;
-  width: 1440;
+  width: 496px;
   align-content: center;
 }
 .post-link {
