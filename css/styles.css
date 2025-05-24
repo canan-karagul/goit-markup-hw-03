@@ -121,16 +121,21 @@
   top: 792px;
   left: 156px;
 }
-.main .target {
+.main .list {
   display: flex;
   width: 264px;
   height: 104px;
   gap: 8px;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 .main .title {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
+  font-family: "Roboto" ,sans-serif;
   line-height: 1.2;
   letter-spacing: 2%;
 }
@@ -138,6 +143,7 @@
   color: rgba(67, 68, 85, 1);
   font-weight: 400px;
   font-size: 16px;
+  font-family: inherit;
   line-height: 4.5;
   letter-spacing: 2%;
 }
