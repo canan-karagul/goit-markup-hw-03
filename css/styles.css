@@ -39,6 +39,8 @@
   line-height: 1.5;
   letter-spacing: 2%;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .navigation .link:hover {
@@ -54,6 +56,8 @@
   letter-spacing: 2%;
   color: #434455;
   display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
 }
 
 /*header-contacts bitiş*/
@@ -74,6 +78,7 @@
   text-align: center;
   text-transform: capitalize;
   width: 1440;
+  align-content: center;
 }
 .post-link {
   width: 169px;
