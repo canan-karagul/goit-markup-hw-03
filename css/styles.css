@@ -6,7 +6,10 @@
 
 .header {
   background-color: rgba(255, 255, 255, 1);
-}
+  display: flex;}
+
+
+
 
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
@@ -40,13 +43,11 @@
   flex-direction: row;
   justify-content: flex-start;
   list-style-type: none;
-}
-
-ul .navigation {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  
 }
+
 .navigation .link:hover {
   color: #404bbf;
 }
@@ -74,6 +75,8 @@ ul .navigation {
 .post {
   background-color: #2e2f42;
   width: 1440px;
+  height: 600px;
+  align-items: center;
 }
 .post .title {
   color: #ffffff;
