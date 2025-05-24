@@ -59,23 +59,21 @@ ul .navigation {
   line-height: 1.5;
   letter-spacing: 2%;
   color: #434455;
-}
-
-address .contacts {
-  margin: 0;
+   margin: 0;
   padding: 0;
   list-style-type: none;
   display: flex;
-  justify-content: flex-end ;
+  justify-content: space-between;
   flex-direction: row;
 }
+
 
 /*header-contacts bitiş*/
 
 /*post sınıfı başlangıç*/
 .post {
   background-color: #2e2f42;
-  width: 1140px;
+  width: 1440px;
 }
 .post .title {
   color: #ffffff;
