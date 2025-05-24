@@ -9,6 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 /* header kutucuk bitiş */
@@ -121,21 +122,28 @@
   top: 792px;
   left: 156px;
 }
+.main .target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  
+}
 .main .list {
   display: flex;
-  width: 264px;
-  height: 104px;
+  width: calc((100%-24px)/4);
   gap: 8px;
   flex-wrap: nowrap;
   list-style-type: none;
   margin: 0 auto;
   padding: 0 auto;
+  flex-wrap: nowrap;
+
 }
 .main .title {
   color: #2e2f42;
   font-weight: 500;
   font-size: 20px;
-  font-family: "Roboto" ,sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.2;
   letter-spacing: 2%;
 }
