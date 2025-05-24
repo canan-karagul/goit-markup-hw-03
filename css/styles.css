@@ -121,6 +121,12 @@
   top: 792px;
   left: 156px;
 }
+.main .target {
+  display: flex;
+  width: 264px;
+  height: 104px;
+  gap: 8px;
+}
 .main .title {
   color: #2e2f42;
   font-weight: 500;
