@@ -38,6 +38,7 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
+  display: flex;
 }
 
 .navigation .link:hover {
@@ -52,6 +53,7 @@
   line-height: 1.5;
   letter-spacing: 2%;
   color: #434455;
+  display: flex;
 }
 
 /*header-contacts bitiş*/
@@ -71,8 +73,8 @@
   letter-spacing: 2%;
   text-align: center;
   text-transform: capitalize;
-  width: 496;
-  height: 120px;
+  width: 1140;
+  height: 600px;
   top: 260 px;
   left: 472px;
 }
@@ -167,6 +169,27 @@
   width: 264px;
   position: inherit;
 }
+.team .list-zero {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.team .list-one {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.team .list-two {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+.team .list-three {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
 /*team section sınıfı bitiş*/
 
 /*portfolio-section sınıfı başlangıç*/
