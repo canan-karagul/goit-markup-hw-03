@@ -9,14 +9,10 @@
   border-bottom: 1px solid #E7E9FC;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   list-style-type: none;
-	min-height: 100vh;
   margin: 0 auto;
-  
-
-
 }
+
 
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
@@ -90,12 +86,16 @@
   letter-spacing: 2%;
   text-align: center;
   text-transform: capitalize;
-  width: 496px;
+  max-width: 496px;
   align-items: center;
   justify-content: center;
+  margin-right: auto;
+  margin-left:auto;
+  margin-bottom: 48px;
+
 }
 .post-link {
-  width: 169px;
+  min-width: 169px;
   border-radius: 4px;
   background-color: #4d5ae5;
   font-weight: 500px;
@@ -106,13 +106,16 @@
   text-align: center;
   position: inside;
   cursor: pointer;
-  margin-left: 636px;
-  margin-top: 428px;
-  margin-bottom: 428px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
+  gap: 10px;
+  display: block;
+
+  
 }
 
 .post-link:hover,
@@ -134,6 +137,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
 
 }
 .target.list {
@@ -276,8 +281,45 @@
 }
 
 /*footer sınıfı bitiş*/
-/*case sınıfı başlangıç*/
+/*basic style başlangıç*/
 .case {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   color: #434455;
 }
+
+.container{width: 1158px;
+margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ ul .target{
+  display: flex;
+  flex-direction: row;
+ }
+ nav {align-items: center;}
