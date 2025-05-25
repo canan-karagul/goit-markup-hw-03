@@ -10,6 +10,9 @@
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
+	min-height: 100vh;
+
+
 }
 
 /* header kutucuk bitiş */
@@ -119,24 +122,19 @@
 /*main sınıfı bailangıç*/
 .main {
   width: 1128px;
-  top: 792px;
-  left: 156px;
+  margin: 0px;
+
 }
 .main .target {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
 }
-.main .list {
-  display: flex;
-  width: calc((100%-24px)/4);
-  gap: 8px;
-  flex-wrap: nowrap;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0 auto;
-  flex-wrap: nowrap;
+.target.list {
+  width: calc((100%-24px)/4)
 
 }
 .main .title {
