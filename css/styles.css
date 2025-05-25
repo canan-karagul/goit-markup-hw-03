@@ -135,15 +135,14 @@
   display: flex;
   gap: 8px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
 
 }
 .target.list {
-  width: calc((100%-24px)/4)
-
+  width: calc((100%-24px)/4);
 }
 .main .title {
   color: #2e2f42;
@@ -186,6 +185,10 @@
   letter-spacing: 2%;
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
+  gap:32px;
+  margin-right: auto;
+  margin-left: auto;
+  width: auto;
 }
 .team .title {
   color: rgba(46, 47, 66, 1);
@@ -207,28 +210,16 @@
 }
 .team .photo {
   width: 264px;
-  position: inherit;
+  display: block;
 }
-.team .list-zero {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
+
+li .team-card{ padding: 0;
+  text-align: center;
+  gap: 8px;
+
+
 }
-.team .list-one {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-}
-.team .list-two {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-}
-.team .list-three {
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-}
+
 
 /*team section sınıfı bitiş*/
 
@@ -289,6 +280,7 @@
 
 .container{width: 1158px;
 margin: 0 auto;
+
 }
 
 .link {
