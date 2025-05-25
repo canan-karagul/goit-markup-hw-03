@@ -6,13 +6,12 @@
 
 .header {
   background-color: rgba(255, 255, 255, 1);
-  border-bottom: 1px solid #E7E9FC;
+  border-bottom: 1px solid #e7e9fc;
   display: flex;
   align-items: center;
   list-style-type: none;
   margin: 0 auto;
 }
-
 
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
@@ -90,9 +89,8 @@
   align-items: center;
   justify-content: center;
   margin-right: auto;
-  margin-left:auto;
+  margin-left: auto;
   margin-bottom: 48px;
-
 }
 .post-link {
   min-width: 169px;
@@ -114,8 +112,6 @@
   padding-left: 32px;
   gap: 10px;
   display: block;
-
-  
 }
 
 .post-link:hover,
@@ -129,7 +125,6 @@
 .main {
   width: 1128px;
   margin: 0px;
-
 }
 .main .target {
   display: flex;
@@ -139,10 +134,9 @@
   padding: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
-
 }
 .target.list {
-  width: calc((100%-24px)/4);
+  width: calc((100%-24px) / 4);
 }
 .main .title {
   color: #2e2f42;
@@ -167,13 +161,18 @@
 .team-section {
   background-color: rgba(244, 244, 253, 1);
   width: 1440px;
+}
+
+.team-section .target {
   display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 auto;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin-top: 1016px;
-  margin-right: 0 auto;
-  margin-bottom: 120px;
 }
+
 .team-section .team {
   font-size: 36px;
   border-top-left-radius: 16px;
@@ -185,7 +184,7 @@
   letter-spacing: 2%;
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
-  gap:32px;
+  gap: 32px;
   margin-right: auto;
   margin-left: auto;
   width: auto;
@@ -213,13 +212,11 @@
   display: block;
 }
 
-li .team-card{ padding: 0;
+li .team-card {
+  padding: 0;
   text-align: center;
   gap: 8px;
-
-
 }
-
 
 /*team section sınıfı bitiş*/
 
@@ -278,9 +275,9 @@ li .team-card{ padding: 0;
   color: #434455;
 }
 
-.container{width: 1158px;
-margin: 0 auto;
-
+.container {
+  width: 1158px;
+  margin: 0 auto;
 }
 
 .link {
@@ -310,8 +307,10 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
- ul .target{
+ul .target {
   display: flex;
   flex-direction: row;
- }
- nav {align-items: center;}
+}
+nav {
+  align-items: center;
+}
