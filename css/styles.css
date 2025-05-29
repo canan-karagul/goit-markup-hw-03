@@ -3,6 +3,57 @@
 *::after {
   box-sizing: border-box;
 }
+:root {
+}
+
+/*basic style başlangıç*/
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+
+.container {
+  width: 1158px;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul .target {
+  display: flex;
+  flex-direction: row;
+}
+nav {
+  align-items: center;
+}
+
+/*basic style bitiş*/
 
 .header {
   background-color: rgba(255, 255, 255, 1);
@@ -16,7 +67,7 @@
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
 .logo-accent {
-  font-family: " Raleway" sans-serif;
+  font-family: " Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
@@ -25,7 +76,7 @@
   color: rgba(77, 90, 229, 1);
 }
 .logo {
-  font-family: "Raleway" sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
@@ -68,7 +119,9 @@
   justify-content: space-between;
   flex-direction: row;
 }
-
+.header .contacs:hover {
+  color: #404bbf;
+}
 /*header-contacts bitiş*/
 
 /*post sınıfı başlangıç*/
@@ -180,14 +233,14 @@
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2%;
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
   gap: 32px;
-  margin-right: auto;
-  margin-left: auto;
-  width: auto;
+  margin: 0 auto;
+  width: 162px;
+  height: 40px;
 }
 .team .title {
   color: rgba(46, 47, 66, 1);
@@ -209,6 +262,7 @@
 }
 .team .photo {
   width: 264px;
+  height:260px;
   display: block;
 }
 
@@ -228,6 +282,14 @@ li .team-card {
   margin-left: 116px;
 }
 
+.portfolio-section .target {
+  margin:0 auto;
+  padding:0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 .portfolio-section .portfolio {
   font-size: 36px;
   border-top-left-radius: 16px;
@@ -235,17 +297,24 @@ li .team-card {
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: center;
-  text-transform: uppercase;
+  text-transform: capitalize;
   letter-spacing: 2%;
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
+  width: 218px;
+  height: 40px;
+  font-weight: 700px;
+  line-height: 1.1em;
 }
 
 .portfolio-section .title {
   color: rgba(46, 47, 66, 1);
-  width: 84px;
+  width: 118px;
+  height: 24px;
   text-align: left;
-  position: inherit;
+  font-size: 20px;
+  font-weight: medium;
+  letter-spacing: 2%;
 }
 .portfolio-section .text {
   font-size: 16px;
@@ -254,11 +323,10 @@ li .team-card {
   letter-spacing: 2%;
   color: rgba(67, 68, 85, 1);
   text-align: left;
-  position: inherit;
 }
 .portfolio-section .photo {
   width: 360px;
-  position: inherit;
+  height: 300px;
 }
 /*portfolio-section sınıfı bitiş*/
 /*footer  sınıfı başlangıç*/
@@ -268,49 +336,37 @@ li .team-card {
   height: 312px;
 }
 
+.footer .logo {
+  color: rgba(244, 244, 253, 1);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  width: 71px;
+  height: 21px;
+}
+
+.footer .logo-accent {
+  color: rgba(77, 90, 229, 1);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.footer .text,
+.footer .text-accent {
+  color: rgba(244, 244, 253, 1);
+  width: 264px;
+  height: 72px;
+  font-weight: 400px;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+}
+
 /*footer sınıfı bitiş*/
-/*basic style başlangıç*/
-.case {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  color: #434455;
-}
-
-.container {
-  width: 1158px;
-  margin: 0 auto;
-}
-
-.link {
-  text-decoration: none;
-}
-
-.list {
-  list-style: none;
-}
-img {
-  display: block;
-  max-width: 100%;
-}
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ul .target {
-  display: flex;
-  flex-direction: row;
-}
-nav {
-  align-items: center;
-}
