@@ -60,10 +60,7 @@ ul .target {
 .header {
   background-color: var(--header-back-color);
   border-bottom: 1px solid #e7e9fc;
-
-  
   font-family: "Raleway", sans-serif;
-   min-height: 100vh;
 }
 
 /* header kutucuk bitiş */
@@ -99,6 +96,7 @@ ul .target {
   margin: 0;
   padding: 0;
   gap: 40px;
+  align-items: center;
 }
 
 .navigation .link:hover {
@@ -119,6 +117,7 @@ ul .target {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+  align-items: center;
 }
 .header .contacs:hover {
   color: #404bbf;
@@ -129,10 +128,8 @@ ul .target {
 .post {
   background-color: var(--navigation-link-color);
   width: 1440px;
-  height: 600px;
   padding-top: 120px;
   padding-bottom: 120px;
-   min-height: 100vh;
 }
 .post .title {
   color: #ffffff;
@@ -161,14 +158,12 @@ ul .target {
   text-align: center;
   position: inside;
   cursor: pointer;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
   padding-left: 32px;
   gap: 10px;
-  display: block;
 }
 
 .post-link:hover,
@@ -184,7 +179,6 @@ ul .target {
   margin: 0px;
   padding-top: 120px;
   padding-bottom: 120px;
-   min-height: 100vh;
 }
 .main .target {
   display: flex;
@@ -229,7 +223,6 @@ ul .target {
   width: 1440px;
   padding-top: 120px;
   padding-bottom: 120px;
-   min-height: 100vh;
 
 }
 
@@ -357,7 +350,6 @@ li .team-card {
   height: 312px;
   padding-top: 120px;
   padding-bottom: 120px;
-  min-height: 100vh;
 }
 
 .footer .logo {
