@@ -61,6 +61,11 @@ ul .target {
   background-color: var(--header-back-color);
   border-bottom: 1px solid #e7e9fc;
   font-family: "Raleway", sans-serif;
+  display: flex;
+  align-items:flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+
 }
 
 /* header kutucuk bitiş */
@@ -72,6 +77,8 @@ ul .target {
   letter-spacing: 3%;
   text-transform: uppercase;
   color: var(--logo-accent-color);
+  text-align: left;
+  text-decoration: none;
 }
 .logo {
   font-weight: 700;
@@ -79,8 +86,10 @@ ul .target {
   line-height: 1.16;
   letter-spacing: 3%;
   text-transform: uppercase;
-
+  text-align:left;
+  text-decoration: none;
   color: var(--logo-color);
+
 }
 
 .navigation .link {
@@ -89,14 +98,12 @@ ul .target {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style-type: none;
   margin: 0;
   padding: 0;
   gap: 40px;
-  align-items: center;
+  align-items: top;
+
+
 }
 
 .navigation .link:hover {
@@ -114,10 +121,8 @@ ul .target {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .header .contacs:hover {
   color: #404bbf;
@@ -128,8 +133,13 @@ ul .target {
 .post {
   background-color: var(--navigation-link-color);
   width: 1440px;
+  height: 600px;
   padding-top: 120px;
   padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .post .title {
   color: #ffffff;
@@ -142,9 +152,7 @@ ul .target {
   max-width: 496px;
   align-items: center;
   justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 48px;
+  margin: 0 auto;
 }
 .post-link {
   min-width: 169px;
@@ -156,9 +164,8 @@ ul .target {
   letter-spacing: 4%;
   color: #ffffff;
   text-align: center;
-  position: inside;
   cursor: pointer;
-  margin:0 auto;
+  margin: 0 auto;
   padding-top: 16px;
   padding-right: 32px;
   padding-bottom: 16px;
@@ -250,7 +257,6 @@ ul .target {
   gap: 32px;
   margin: 0 auto;
   width: 162px;
-  height: 40px;
 }
 .team .title {
   color: rgba(46, 47, 66, 1);
@@ -273,7 +279,6 @@ ul .target {
 }
 .team .photo {
   width: 264px;
-  height: 260px;
   display: block;
 }
 
@@ -291,7 +296,6 @@ li .team-card {
   width: 1128px;
   padding-top: 120px;
   padding-bottom: 120px;
-   min-height: 100vh;
 }
 
 .portfolio-section .list {
@@ -316,7 +320,6 @@ li .team-card {
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
   width: 218px;
-  height: 40px;
   font-weight: 700;
   line-height: 1.1em;
 }
@@ -340,14 +343,12 @@ li .team-card {
 }
 .portfolio-section .photo {
   width: 360px;
-  height: 300px;
 }
 /*portfolio-section sınıfı bitiş*/
 /*footer  sınıfı başlangıç*/
 .footer {
   background-color: rgba(46, 47, 66, 1);
   width: 1440px;
-  height: 312px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -361,7 +362,6 @@ li .team-card {
   letter-spacing: 3%;
   text-transform: uppercase;
   width: 71px;
-  height: 21px;
 }
 
 .footer .logo-accent {
@@ -378,7 +378,6 @@ li .team-card {
 .footer .text-accent {
   color: rgba(244, 244, 253, 1);
   width: 264px;
-  height: 72px;
   font-weight: 400px;
   font-size: 24px;
   line-height: 1.5;
