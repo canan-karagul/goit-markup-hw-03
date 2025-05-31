@@ -23,6 +23,7 @@ body {
   width: 1158px;
 
   display: flex;
+  flex-direction: column;
 }
 
 .link {
@@ -82,7 +83,7 @@ ul .target {
   text-transform: uppercase;
   text-align: left;
   text-decoration: none;
-  color: var(--logo-color);
+  color: rgba(46, 47, 66, 1);
   justify-self: flex-start;
 
 }
@@ -336,7 +337,8 @@ li .team-card {
 /*footer  sınıfı başlangıç*/
 .footer {
   background-color: rgba(46, 47, 66, 1);
-  width: 1440px;
+  text-decoration: none;
+  
 
 }
 
