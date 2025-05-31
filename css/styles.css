@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 :root {
   --body-color: #434455;
@@ -21,8 +21,7 @@ body {
 
 .container {
   width: 1158px;
-
-
+  position: relative;
 }
 
 .link {
@@ -34,23 +33,15 @@ body {
   text-decoration: none;
 }
 .logo,
-.logo-accent{list-style: none;
-text-decoration: none;}
-img {
-  max-width: 100%;
- 
+.logo-accent {
+  list-style: none;
+  text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+img {
+  max-width: 100%;
 }
+
 ul .target {
   display: flex;
   flex-direction: row;
@@ -62,12 +53,18 @@ ul .target {
   background-color: var(--header-back-color);
   border-bottom: 1px solid #e7e9fc;
   font-family: "Raleway", sans-serif;
-  display: flex;
+  height: 72px;
 }
 
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
- .header .logo-accent {
+.header .logo-box {
+  position: absolute;
+  left: 156px;
+  top: 24px;
+}
+
+.header .logo-accent {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
@@ -76,10 +73,10 @@ ul .target {
   color: var(--logo-accent-color);
   text-align: left;
   text-decoration: none;
-  justify-self: flex-start;
 }
- .header.logo {
+.header.logo {
   font-weight: 700;
+  width: 71px;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 3%;
@@ -87,8 +84,16 @@ ul .target {
   text-align: left;
   text-decoration: none;
   color: rgba(46, 47, 66, 1);
-  justify-self: flex-start;
-
+}
+.header .navigation {
+  display: flex;
+  list-style-type: none;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  left: 347px;
+  top: 24px;
+  gap: 40px;
 }
 
 .header .navigation .link {
@@ -97,10 +102,6 @@ ul .target {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
-  flex-direction: row;
-  list-style-type: none;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .header .navigation .link:hover {
@@ -109,18 +110,33 @@ ul .target {
 /*header-navigation bitiş*/
 
 /*header contacts başlangıç*/
-.header .contacts .link {
+.header .contacts {
+  display: flex;
+  list-style-type: none;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  text-decoration: none;
+}
+.contacts.link-bir{position: absolute;
+left:940px;
+top:24px;}
+.contacts .link-iki {
+  position: absolute;
+  right: -156px;
+  top: -1px;
+}
+
+.header .contacts .link-bir,
+.header .contacts .link-iki {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 2%;
   color: var(--body-color);
-  list-style-type: none;
-   flex-direction: row;
-  align-items: flex-end;
-  justify-content: flex-end;
 }
-.header .contacs .link:hover {
+.header .contacts .link-bir:hover,
+.header .contacts .link-iki:hover {
   color: #404bbf;
 }
 /*header-contacts bitiş*/
@@ -129,11 +145,12 @@ ul .target {
 .post {
   background-color: var(--navigation-link-color);
   width: 1440px;
-  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .post .title {
   color: #ffffff;
@@ -143,10 +160,9 @@ ul .target {
   letter-spacing: 2%;
   text-align: center;
   text-transform: capitalize;
-  max-width: 496px;
+  width: 496px;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 .post-link {
   min-width: 169px;
@@ -159,12 +175,8 @@ ul .target {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
-  margin: 0 auto;
-  padding-top: 16px;
-  padding-right: 32px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  gap: 10px;
+  padding: 16px 32px;
+  margin: 0 10px;
 }
 
 .post-link:hover,
@@ -222,19 +234,29 @@ ul .target {
 .team-section {
   background-color: rgba(244, 244, 253, 1);
   width: 1440px;
-
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
+.team-card {
+  text-align: center;
+  display: flex;
 
+  gap: 8px;
+  flex-direction: column;
+  margin-top: 32px;
+  padding: 0;
+}
 .team-section .target {
   display: flex;
   list-style: none;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  position: relative;
+  left: 156px;
+  padding-bottom: 120px;
+  padding-top: 120px;
 }
-.team-section .list {
-  padding-bottom: 32px;
-}
+
 .team-section .team {
   font-size: 36px;
   border-top-left-radius: 16px;
@@ -247,7 +269,6 @@ ul .target {
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
   margin: 0 auto;
-  width: 162px;
 }
 .team .title {
   color: rgba(46, 47, 66, 1);
@@ -268,14 +289,7 @@ ul .target {
 }
 .team .photo {
   width: 264px;
-  display: block;
-}
-
-li .team-card {
-  text-align: center;
-  gap: 8px;
-  flex-direction:column;
-
+  margin-bottom: 32px;
 }
 
 /*team section sınıfı bitiş*/
@@ -284,19 +298,26 @@ li .team-card {
 .portfolio-section {
   background-color: rgba(255, 255, 255, 1);
   width: 1128px;
-  margin:0 auto;
-  
+  position: absolute;
+  left: 156px;
+  right: 156px;
+}
+.portfolio-box {
+  text-align: left;
+  gap: 8px;
+  padding: 32px 16px;
 }
 .portfolio-section .target {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content:space-around;
+  justify-content: space-around;
   list-style: none;
   padding-top: 120px;
   padding-bottom: 120px;
   border-bottom: 1px solid #ffffff;
+  flex-basis: calc((100%-48px) / 3);
 }
 
 .portfolio-section .portfolio {
@@ -318,8 +339,7 @@ li .team-card {
 
 .portfolio-section .title {
   color: rgba(46, 47, 66, 1);
-  width: 118px;
-  height: 24px;
+
   text-align: left;
   font-size: 20px;
   font-weight: 500;
@@ -335,15 +355,37 @@ li .team-card {
 }
 .portfolio-section .photo {
   width: 360px;
- 
 }
 /*portfolio-section sınıfı bitiş*/
 /*footer  sınıfı başlangıç*/
 .footer {
   background-color: rgba(46, 47, 66, 1);
   text-decoration: none;
-  
+  position: absolute;
+  left: 0;
+  top: 2988px;
+  width: 1440px;
+  height: 312px;
+}
 
+.footer .footer-box {
+  width: 264px;
+  position: absolute;
+  left: 156px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.footer .logo-box {
+  padding: 0;
+  gap: 0;
+  margin-right: 156px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.footer .text-box {
+  padding: 0;
+  box-sizing: content-box;
+  height: auto;
 }
 
 .footer .logo {
@@ -372,9 +414,11 @@ li .team-card {
   color: rgba(244, 244, 253, 1);
   width: 264px;
   font-weight: 400px;
-  font-size: 24px;
-  line-height:1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 2%;
+  height: auto;
 }
 
 /*footer sınıfı bitiş*/
