@@ -21,11 +21,8 @@ body {
 
 .container {
   width: 1158px;
-  margin: 0;
+
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  flex-shrink: 0;
 }
 
 .link {
@@ -36,8 +33,8 @@ body {
   list-style: none;
 }
 img {
-  display: block;
   max-width: 100%;
+ 
 }
 
 h1,
@@ -62,15 +59,11 @@ ul .target {
   border-bottom: 1px solid #e7e9fc;
   font-family: "Raleway", sans-serif;
   display: flex;
-  align-items:flex-start;
-  justify-content: flex-start;
-  margin: 0 auto;
-
 }
 
 /* header kutucuk bitiş */
 /*header-navigation başlangıç*/
-.logo-accent {
+ .header .logo-accent {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
@@ -79,16 +72,18 @@ ul .target {
   color: var(--logo-accent-color);
   text-align: left;
   text-decoration: none;
+  justify-self: flex-start;
 }
-.logo {
+ .header.logo {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.16;
   letter-spacing: 3%;
   text-transform: uppercase;
-  text-align:left;
+  text-align: left;
   text-decoration: none;
   color: var(--logo-color);
+  justify-self: flex-start;
 
 }
 
@@ -98,12 +93,9 @@ ul .target {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
-  margin: 0;
-  padding: 0;
-  gap: 40px;
-  align-items: top;
-
-
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .navigation .link:hover {
@@ -118,13 +110,12 @@ ul .target {
   line-height: 1.5;
   letter-spacing: 2%;
   color: var(--body-color);
-  margin: 0;
-  padding: 0;
   list-style-type: none;
-  flex-direction: column;
+   flex-direction: row;
   align-items: flex-end;
+  justify-content: flex-end;
 }
-.header .contacs:hover {
+.header .contacs .link:hover {
   color: #404bbf;
 }
 /*header-contacts bitiş*/
@@ -134,12 +125,10 @@ ul .target {
   background-color: var(--navigation-link-color);
   width: 1440px;
   height: 600px;
-  padding-top: 120px;
-  padding-bottom: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; 
 }
 .post .title {
   color: #ffffff;
@@ -228,21 +217,19 @@ ul .target {
 .team-section {
   background-color: rgba(244, 244, 253, 1);
   width: 1440px;
-  padding-top: 120px;
-  padding-bottom: 120px;
 
 }
 
 .team-section .target {
   display: flex;
-  gap: 8px;
   list-style: none;
-  padding-bottom: 32px;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: calc((100%-96px) / 4);
+  justify-content: space-around;
 }
-
+.team-section .list {
+  padding-bottom: 32px;
+}
 .team-section .team {
   font-size: 36px;
   border-top-left-radius: 16px;
@@ -254,7 +241,6 @@ ul .target {
   letter-spacing: 2%;
   line-height: 1.1;
   color: rgba(46, 47, 66, 1);
-  gap: 32px;
   margin: 0 auto;
   width: 162px;
 }
@@ -265,8 +251,6 @@ ul .target {
   line-height: 1.2;
   letter-spacing: 2%;
   text-align: center;
-  
-
 }
 .team .text {
   color: rgba(67, 68, 85, 1);
@@ -283,9 +267,10 @@ ul .target {
 }
 
 li .team-card {
-  padding: 0;
   text-align: center;
   gap: 8px;
+  flex-direction:column;
+
 }
 
 /*team section sınıfı bitiş*/
@@ -294,22 +279,24 @@ li .team-card {
 .portfolio-section {
   background-color: rgba(255, 255, 255, 1);
   width: 1128px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  margin:0 auto;
+  
 }
-
-.portfolio-section .list {
+.portfolio-section .target {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-around;
   list-style: none;
-  border-bottom: 1px solid #FFFFFF;
- 
-
+  padding-top: 120px;
+  padding-bottom: 120px;
+  border-bottom: 1px solid #ffffff;
 }
 
 .portfolio-section .portfolio {
   font-size: 36px;
+  margin: 0 auto;
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding-top: 16px;
@@ -343,14 +330,14 @@ li .team-card {
 }
 .portfolio-section .photo {
   width: 360px;
+ 
 }
 /*portfolio-section sınıfı bitiş*/
 /*footer  sınıfı başlangıç*/
 .footer {
   background-color: rgba(46, 47, 66, 1);
   width: 1440px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+
 }
 
 .footer .logo {
@@ -369,7 +356,7 @@ li .team-card {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 3%;
   text-transform: uppercase;
 }
@@ -380,7 +367,7 @@ li .team-card {
   width: 264px;
   font-weight: 400px;
   font-size: 24px;
-  line-height: 1.5;
+  line-height:1.5;
   letter-spacing: 2%;
 }
 
