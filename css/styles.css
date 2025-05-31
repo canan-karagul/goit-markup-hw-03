@@ -22,8 +22,7 @@ body {
 .container {
   width: 1158px;
 
-  display: flex;
-  flex-direction: column;
+
 }
 
 .link {
@@ -32,7 +31,11 @@ body {
 
 .list {
   list-style: none;
+  text-decoration: none;
 }
+.logo,
+.logo-accent{list-style: none;
+text-decoration: none;}
 img {
   max-width: 100%;
  
@@ -88,18 +91,19 @@ ul .target {
 
 }
 
-.navigation .link {
+.header .navigation .link {
   color: var(--navigation-link-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 2%;
   flex-direction: row;
+  list-style-type: none;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.navigation .link:hover {
+.header .navigation .link:hover {
   color: var(--navigation-link-hover-color);
 }
 /*header-navigation bitiş*/
