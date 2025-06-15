@@ -9,19 +9,30 @@
 
   --logo-accent-color: rgba(77, 90, 229, 1);
   --logo-color: rgba(46, 47, 66, 1);
-  --navigation-link-color: #2e2f42;
-  --navigation-link-hover-color: #404bbf;
 }
 
 /*basic style başlangıç*/
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body-color);
+  margin: 0;
 }
 
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .link {
@@ -42,171 +53,189 @@ img {
   max-width: 100%;
 }
 
-ul .target {
-  display: flex;
-  flex-direction: row;
-}
-
 /*basic style bitiş*/
+/*header başlangıç*/
 
 .header {
   background-color: var(--header-back-color);
   border-bottom: 1px solid #e7e9fc;
-  font-family: "Raleway", sans-serif;
   height: 72px;
+  display: flex;
+  align-items: center;
 }
-
-/* header kutucuk bitiş */
-/*header-navigation başlangıç*/
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*logo başlangıç*/
 .header .logo-box {
   position: absolute;
   left: 156px;
   top: 24px;
 }
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #2e2f42;
+  text-decoration: none;
+}
 
-.header .logo-accent {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 3%;
-  text-transform: uppercase;
+.logo-accent {
   color: var(--logo-accent-color);
-  text-align: left;
-  text-decoration: none;
 }
-.header.logo {
-  font-weight: 700;
-  width: 71px;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 3%;
-  text-transform: uppercase;
-  text-align: left;
-  text-decoration: none;
-  color: rgba(46, 47, 66, 1);
-}
-.header .navigation {
+/*logo bitiş*/
+/*navihasyon başlangıç*/
+.navigation .nav-list {
+  list-style: none;
   display: flex;
-  list-style-type: none;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: relative;
-  left: 347px;
-  top: 24px;
   gap: 40px;
-  color: var(--navigation-link-color);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #404bbf;
+}
+
+.navigation {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  left: 347px;
+  gap: 40px;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
 }
 .navigation:hover {
   color: #404bbf;
 }
+
 /*header-navigation bitiş*/
 
 /*header contacts başlangıç*/
-.header .contacts {
+.contacts {
   display: flex;
   list-style-type: none;
   align-items: flex-end;
-  justify-content: flex-end;
-  position: relative;
   text-decoration: none;
-}
-.contacts ul {
-  display: flex;
-}
-.contacts .link-a {
-  margin-right: 24px;
+  justify-content: space-between;
 }
 
-.header .contacts .link-a,
-.header .contacts .link-b {
+.contacts :hover {
+  color: #404bbf;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #404bbf;
+}
+.contacts ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-link {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
+  text-decoration: none;
   color: var(--body-color);
 }
-.header .contacts .link-a:hover,
-.header .contacts .link-b:hover {
-  color: #404bbf;
-}
+
 /*header-contacts bitiş*/
 
 /*post sınıfı başlangıç*/
 .post {
-  background-color: var(--navigation-link-color);
-  width: 1440px;
+  background-color: #2e2f42;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding-top: 120px;
   padding-bottom: 120px;
+  text-align: center;
 }
+
 .post .title {
   color: #ffffff;
   font-weight: 700;
   font-size: 56px;
-  line-height: 2.1;
-  letter-spacing: 2%;
-  text-align: center;
-  text-transform: capitalize;
-  width: 496px;
-  align-items: center;
-  justify-content: center;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  max-width: 496px;
+  margin-bottom: 48px;
 }
+
 .post-link {
-  width: 105px;
-  height: 24px;
+  padding: 16px 32px;
   border-radius: 4px;
   background-color: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
-  text-align: center;
+  border: none;
   cursor: pointer;
-  padding: 16px 32px;
-  margin: 0 10px;
+  transition: background-color 250ms ease;
 }
 
 .post-link:hover,
 .post-link:focus {
   background-color: #404bbf;
-  border-radius: 4px;
 }
+
 /*post sınıfı bitiş*/
 
 /*main sınıfı bailangıç*/
 .main {
-  width: 1128px;
-
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 .main .target {
   display: flex;
-  left: 156px;
-  right: -156px;
-  position: relative;
-  height: 104px;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
   flex-direction: row;
   flex-wrap: nowrap;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
 .main .list {
   display: flex;
-  flex-wrap: wrap;
+  flex: 1;
+  flex-direction: column;
   gap: 8px;
-  margin-right: 24px;
-  padding: 0;
-  list-style: none;
+  margin: 0 12px;
+  box-sizing: border-box;
   text-align: left;
-  height: 0 auto;
 }
 
 .main .title {
@@ -215,7 +244,7 @@ ul .target {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   line-height: 1.2;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .main .text {
   color: rgba(67, 68, 85, 1);
@@ -231,59 +260,37 @@ ul .target {
 
 .team-section {
   background-color: rgba(244, 244, 253, 1);
-  width: 1440px;
-  padding-bottom: 120px;
-  padding-top: 120px;
-  position: relative;
-  right: 0 auto;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
-.team-card {
-  text-align: center;
-  display: flex;
 
-  gap: 8px;
-  flex-direction: column;
-  margin-top: 32px;
-  padding: 0;
+.team {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: rgba(46, 47, 66, 1);
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
+
+.team-section .target {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+}
+
 .team-card .title {
   color: rgba(46, 47, 66, 1);
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 2%;
   text-align: center;
-}
-.team-section .target {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  position: relative;
-  left: 156px;
-  right: -156px;
-  margin: 0 auto;
-  flex-basis: ((100%-72px))/4;
-}
-.team-section .list {
-  padding-bottom: 32px;
-  margin-right: 24px;
-}
-.team-section .team {
-  font-size: 36px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 2%;
-  line-height: 1.1em;
-  color: rgba(46, 47, 66, 1);
-  margin: 0 auto;
-  width: 162px;
-  font-weight: 700;
+  margin: 0;
 }
 
 .team .text {
@@ -293,121 +300,136 @@ ul .target {
   line-height: 1.5;
   letter-spacing: 2%;
   text-align: center;
-  position: inherit;
+  margin: 0;
 }
-.team .photo {
+.team-section .list {
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 1px 1px rgba(0, 0, 0, 0.16),
+    0px 1px 6px rgba(0, 0, 0, 0.08);
   width: 264px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
   margin-bottom: 32px;
+}
+
+.team-card {
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 /*team section sınıfı bitiş*/
 
 /*portfolio-section sınıfı başlangıç*/
 .portfolio-section {
-  background-color: rgba(255, 255, 255, 1);
-  width: 1128px;
-  position: absolute;
-  left: 156px;
-  right: 156px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.portfolio-box {
-  text-align: left;
-  gap: 8px;
-  padding: 32px 16px;
-}
-.portfolio-section .target {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
-  list-style: none;
-  border-bottom: 1px solid #ffffff;
-  flex-basis: calc((100%-48px) / 3);
+  background-color: #ffffff;
+  padding: 120px 0;
 }
 
 .portfolio-section .portfolio {
   font-size: 36px;
-  margin: 0 auto;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: 2%;
-  color: rgba(46, 47, 66, 1);
-  width: 218px;
   font-weight: 700;
-  line-height: 1.1em;
+  line-height: 1.11;
+  text-align: center;
+  color: #2e2f42;
+  letter-spacing: 0.02em;
+  margin-bottom: 72px;
+  font-family: "Roboto", sans-serif;
+}
+.portfolio-section .target {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.portfolio-section .list {
+  width: calc((100% - 48px) / 3);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+  padding: 32px 16px;
 }
 
 .portfolio-section .title {
   color: rgba(46, 47, 66, 1);
-
-  text-align: left;
+  margin: 0;
   font-size: 20px;
   font-weight: 500;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
 }
 .portfolio-section .text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: rgba(67, 68, 85, 1);
-  text-align: left;
+  margin: 8px 0 0;
 }
+
 .portfolio-section .photo {
-  width: 360px;
+  width: 100%;
+  display: block;
 }
+
 /*portfolio-section sınıfı bitiş*/
 /*footer  sınıfı başlangıç*/
 .footer {
-  background-color: rgba(46, 47, 66, 1);
-  text-decoration: none;
-  position: absolute;
-  left: 156px;
-  top: 2988px;
-  width: 1440px;
+  background-color: #2e2f42;
   padding-top: 120px;
   padding-bottom: 120px;
-  margin-top: 0 auto;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  max-width: 264px;
+  margin-left: 0;
+  padding-left: 156px;
 }
 
 .footer .logo {
-  color: rgba(244, 244, 253, 1);
+  color: #f4f4fd;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 3%;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 71px;
+  text-decoration: none;
 }
 
 .footer .logo-accent {
-  color: rgba(77, 90, 229, 1);
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 3%;
-  text-transform: uppercase;
+  color: #4d5ae5;
 }
 
-.footer .text,
-.footer .text-accent {
-  color: rgba(244, 244, 253, 1);
-  width: 264px;
-  font-weight: 400px;
+.footer-text {
+  color: #f4f4fd;
   font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
-  height: auto;
+  letter-spacing: 0.02em;
+  margin: 0;
 }
 
 /*footer sınıfı bitiş*/
